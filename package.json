@@ -1,0 +1,25 @@
+{
+  "name": "@henris/init",
+  "version": "1.0.2",
+  "description": "Create Henris files",
+  "main": "app.scss",
+  "scripts": {
+    "postinstall": "./setup.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henris-style/setup-files.git"
+  },
+  "keywords": [
+    "henris",
+    "scss",
+    "setup",
+    "files"
+  ],
+  "author": "Sil van Diepen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/henris-style/setup-files/issues"
+  },
+  "homepage": "https://github.com/henris-style/setup-files#readme"
+}
