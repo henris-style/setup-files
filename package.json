@@ -1,6 +1,6 @@
 {
   "name": "@henris/init",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Create Henris files",
   "main": "app.scss",
   "scripts": {
