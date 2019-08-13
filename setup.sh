@@ -7,7 +7,6 @@ printf 'App.scss created'
 # tools
 mkdir tools 
 
-curl -o tools/_index.scss -l ${URL}/tools/_index.scss 
 curl -o tools/_pre.scss -l ${URL}/tools/_pre.scss 
 curl -o tools/_post.scss -l ${URL}/tools/_post.scss 
 
