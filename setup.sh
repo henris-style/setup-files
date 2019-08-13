@@ -2,7 +2,7 @@
 URL="https://raw.githubusercontent.com/henris-style/setup-files/master"
 
 curl -o app.scss -l ${URL}/app.scss
-printf '\nApp.scss  \e[1;34mcreated!.\e[0m' 
+printf '\n\tApp.scss  \e[1;34mcreated!.\e[0m' 
 
 # tools
 mkdir tools 
