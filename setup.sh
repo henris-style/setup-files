@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
 URL="https://raw.githubusercontent.com/henris-style/setup-files/master"
 
-curl -o app.scss -l ${URL}/app.scss 
+curl -o app.scss -l ${URL}/app.scss
 printf 'App.scss created' 
 
 # tools
 mkdir tools 
 
+curl -o tools.scss -l ${URL}/tools.scss 
 curl -o tools/_pre.scss -l ${URL}/tools/_pre.scss 
 curl -o tools/_post.scss -l ${URL}/tools/_post.scss 
 
