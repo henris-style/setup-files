@@ -1,39 +1,41 @@
 #!/usr/bin/env bash
 URL="https://raw.githubusercontent.com/henris-style/setup-files/master"
+TARGET="$@/"
 
-curl -o app.scss -l ${URL}/app.scss 
-printf 'App.scss created' 
+curl -o ${TARGET}app.scss -l ${URL}/app.scss
+printf '\n  App.scss \e[1;34mcreated!\e[0m' 
 
 # tools
-mkdir tools 
+mkdir -p ${TARGET}tools 
 
-curl -o tools/_index.scss -l ${URL}/tools/_index.scss 
-curl -o tools/_pre.scss -l ${URL}/tools/_pre.scss 
-curl -o tools/_post.scss -l ${URL}/tools/_post.scss 
+curl -o ${TARGET}tools.scss -l ${URL}/tools.scss 
+curl -o ${TARGET}tools/_pre.scss -l ${URL}/tools/_pre.scss 
+curl -o ${TARGET}tools/_post.scss -l ${URL}/tools/_post.scss 
 
-printf 'Tools created!' 
+printf '\n  Tools \e[1;34mcreated!\e[0m' 
 
 # typography
-mkdir typography 
+mkdir -p ${TARGET}typography 
 
-curl -o typography/_index.scss -l ${URL}/typography/_index.scss 
-curl -o typography/_embed.scss -l ${URL}/typography/_embed.scss 
-curl -o typography/_spacing.scss -l ${URL}/typography/_spacing.scss 
-curl -o typography/_usage.scss -l ${URL}/typography/_usage.scss 
+curl -o ${TARGET}typography/_index.scss -l ${URL}/typography/_index.scss 
+curl -o ${TARGET}typography/_embed.scss -l ${URL}/typography/_embed.scss 
+curl -o ${TARGET}typography/_spacing.scss -l ${URL}/typography/_spacing.scss 
+curl -o ${TARGET}typography/_usage.scss -l ${URL}/typography/_usage.scss 
 
-printf 'Typography created!' 
+printf '\n  Typography \e[1;34mcreated!\e[0m' 
 
 #components
-mkdir components 
+mkdir -p ${TARGET}components 
 
-curl -o components/_index.scss -l ${URL}/components/_index.scss 
+curl -o ${TARGET}components/_index.scss -l ${URL}/components/_index.scss 
 
-printf 'Components created!'
+printf '\n  Components \e[1;34mcreated!\e[0m'
 
 #colors
-mkdir color 
+mkdir -p ${TARGET}color 
 
-curl -o color/_index.scss -l ${URL}/color/_index.scss 
-curl -o color/_custom-colors.scss -l ${URL}/color/_custom-colors.scss 
+curl -o ${TARGET}color/_index.scss -l ${URL}/color/_index.scss 
+curl -o ${TARGET}color/_custom-colors.scss -l ${URL}/color/_custom-colors.scss 
 
-printf 'Colors created!'
+printf '\n  Colors \e[1;34mcreated!\e[0m'
+printf '\n\t'
