@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-URL="https://raw.githubusercontent.com/henris-style/setup-files/master"
+URL="https://raw.githubusercontent.com/henris-style/setup-files/master/src"
 TARGET="$1/"
 
 if [ -z "$1" ]
