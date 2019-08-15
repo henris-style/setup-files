@@ -49,6 +49,7 @@ printf '\n  Colors \e[1;34mcreated!\e[0m'
 
 # app.scss
 curl -o ${TARGET}app.scss -l ${URL}/app.scss --fail --silent --show-error
+
 printf '\n  App.scss \e[1;34mcreated!\e[0m' 
 
 
