@@ -6,7 +6,7 @@
 $output: set-output(css, true);
 
 // Output the whole framework
-@import '~@henris/next';
+@import 'henris';
 
 // Defined settings
 @import 'tools/post';
