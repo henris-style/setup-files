@@ -30,6 +30,7 @@ printf '\n  Typography \e[1;34mcreated!\e[0m'
 mkdir -p ${TARGET}components 
 
 curl -o ${TARGET}components/_index.scss -l ${URL}/components/_index.scss --fail --silent --show-error
+curl -o ${TARGET}components/_content.scss -l ${URL}/components/_content.scss --fail --silent --show-error
 
 printf '\n  Components \e[1;34mcreated!\e[0m'
 
